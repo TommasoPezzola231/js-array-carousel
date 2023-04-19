@@ -41,6 +41,22 @@ buttonNext.addEventListener("click", function () {
         }
     
         immagineVisualizzata++
+    } else {
+        immagineVisualizzata = -1;
+
+        for (let c = 0; c < 5; c++) {
+        
+            if (c == immagineVisualizzata+1) {
+                immagini[c].classList.remove("dNone");
+                console.log("sei qui")
+            } else {
+                console.log("sei qui sotto")
+                immagini[c].classList.add("dNone");
+            }
+            
+        }
+
+        immagineVisualizzata++
     }
 
     
@@ -50,6 +66,21 @@ buttonPrevious.addEventListener("click", function () {
     
     if (immagineVisualizzata > 0) {
         
+        for (let c = 0; c < 5; c++) {
+        
+            if (c == immagineVisualizzata-1) {
+                immagini[c].classList.remove("dNone");
+            } else {
+                immagini[c].classList.add("dNone");
+            }
+            
+        }
+    
+        immagineVisualizzata--
+
+    } else {
+        immagineVisualizzata = 5
+
         for (let c = 0; c < 5; c++) {
         
             if (c == immagineVisualizzata-1) {
