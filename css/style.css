@@ -18,7 +18,7 @@
     transform: translate(-50%, -50%);
 }
 
-.dBlock {
+img {
     width: 100%;
     max-height: 100%;
     object-fit: contain;
@@ -39,7 +39,7 @@ button:hover {
     cursor: pointer;
 }
 
-.fa-arrow-up {
+#previous {
     position: absolute;
     top: 0%;
     left: 50%;
@@ -50,7 +50,7 @@ button:hover {
     padding: 3px;
 }
 
-.fa-arrow-down {
+#next {
     position: absolute;
     bottom: 0%;
     left: 50%;
